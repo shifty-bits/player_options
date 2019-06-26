@@ -2,7 +2,7 @@
 quick and dirty script to see what years an mlb player has been optioned
 
 How to:
-  Get python https://www.python.org/
-  Run 'python setup.py install'
+  Get python3 https://www.python.org/ (don't forget the option to add python to path)
+  Run 'pip install -r requirements.txt'
   Run 'python player_options.py'
   Enter a player name 
