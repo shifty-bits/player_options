@@ -15,7 +15,8 @@ if name:
 		id = r.json()['search_player_all']['queryResults']['row']['player_id']
 	except:
 		print(f"could not find player: {name}")
-		
+		sys.exit(1)
+
 	split_name = name.lower().split()
 	mlb_file = requests.get(f'https://www.mlb.com/player/{split_name[0]}-{split_name[1]}-{id}')
 	soup = BeautifulSoup(mlb_file.content, features='html.parser')
